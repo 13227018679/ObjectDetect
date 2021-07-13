@@ -6,7 +6,6 @@
 
 import os
 
-import tensorflow as tf2
 import numpy as np
 import xml.etree.ElementTree as ET
 
@@ -66,7 +65,6 @@ def parse_annotation(img_dir, ann_dir, labels):
                 max_boxes = boxes_counter
 
         imgs_info.append(img_info)
-
 
     # the maximum boxes number is max_boxes
     # [b, 40, 5]
